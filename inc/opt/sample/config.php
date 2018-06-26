@@ -211,6 +211,7 @@
                     [
                         'title'     => 'Logo Uplaods',
                         'type'      => 'media',
+                        'url'       => true,
                         'id'        => 'logoup',
                         'default'   => [
                             'url'   => get_template_directory_uri().'/images/logo.png'
@@ -254,7 +255,23 @@
                     ]
                 ]);
 
-
+                Redux::setSection($opt_name, [
+                    'title'         => 'Page Settings',
+                    'subsection'    => true,
+                    'fields'        => [
+                        [
+                            'title'         => 'Blog Page Title Background',
+                            'id'            => 'blog-top-bg',
+                            'type'          => 'media',
+                            'url'           => true,
+                            'default'       => [
+                                'url'           => get_template_directory_uri().'/images/blog-bg.png'
+                            ]
+                        ]
+                        
+                    ]
+                ]);
+                
 
     Redux::setSection($opt_name, [
         'title'         => 'Custom CSS',
@@ -276,6 +293,34 @@
         'title'         => 'Footer Settings',
         'icon'          => 'el el-css',
         'fields'        => [
+            [
+                'title'     => 'Footer top background',
+                'id'        => 'ftopbg',
+                'type'      => 'media',
+                'url'       => true,
+                 'default'   => [
+                            'url'   => get_template_directory_uri().'/images/cta-background.png'
+                        ]
+            ],
+            [
+                'title'     => 'Footer top left Content',
+                'id'        => 'footer-top-cont',
+                'type'      => 'editor',
+             ],
+                
+             [
+                'title'     => 'Footer top Button',
+                'id'        => 'footer-top-button',
+                'type'      => 'text',
+                'options'   => [
+                    'label'         => 'Label',
+                    'url'           => 'URL',
+                ],
+                'default'       => [
+                   'label'          => 'Contact US',
+                    'url'           => '',
+                ],
+            ],
             [
                 'title'     => 'Footer background color',
                 'id'        => 'fbc',

@@ -34,7 +34,7 @@
 		));
 
 		while($widgetpost->have_posts()): $widgetpost->the_post();  ?>
-		<p><?php echo wp_trim_words(get_the_content(), 7, false); ?></p>
+		<p><?php the_title(); ?></p>
 		<?php endwhile; ?>
 			
 		</div>
@@ -50,8 +50,11 @@
 		public function form($second){
 			
 			
-			$title = $second['title'];
-			$postnum = $second['postnum'];
+			$title = isset( $second['title'] ) ? $second['title'] : '';
+			
+			$postnum = isset( $second['postnum'] ) ? $second['postnum'] : '';
+
+
 			
 			?>
 			

@@ -192,7 +192,7 @@ header {
 }
 .internal-banner-section{
  /* height: 500px;*/
-  background-size: 100% 100%;
+  background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -226,6 +226,11 @@ header {
   font-family: 'Source Sans Pro', sans-serif;
   color: #ffffff;
   font-size: 40px;
+}
+
+.banner-cont h1 a{
+  color: #ffffff;
+  text-decoration: none;
 }
 .banner-cont h1 span{
   font-weight: 600;
@@ -421,7 +426,7 @@ ul.cyber-list li::before {
 
 
 .middle-area {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .security-service{
@@ -595,6 +600,103 @@ ul.cyber-list li::before {
   right: 0;
   left: 0;
 }
+
+
+.time-icon {
+  background: url('../images/time-icon.png');
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 20px;
+  content: '';
+  height: 20px;
+  background-repeat: no-repeat;
+  margin-top: 15px;
+}
+.share-icon {
+  background: url('../images/share.png');
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 20px;
+  content: '';
+  height: 20px;
+  background-repeat: no-repeat;
+  margin-top: 15px;
+}
+
+.blog-content .time-section {
+  float: left;
+}
+.share-section {
+  float: right;
+}
+.blog-content .meta-section {
+  overflow: hidden;
+}
+.single-post-blog{
+  padding: 40px 0;
+}
+.single-post-blog img{
+  width: 100%;
+}
+.single-post-blog img:hover{
+   opacity: .7;
+}
+.single-post-blog h2{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #252525;
+}
+.single-post-blog h2:hover{
+  opacity: .7;
+}
+.single-post-blog a{
+  text-decoration: none;
+}
+.single-post-blog hr{
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid #b7b7b7;
+  margin-top: 10px;
+}
+.time-section span {
+  position: relative;
+  top: -3px;
+  color: #888888;
+  left: 10px;
+}
+.single-post-blog p{
+  margin-bottom: 0;
+}
+
+.single-post-blog img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-content-single{
+  overflow: hidden;
+}
+.blog-content-single .title-blog{
+  float: left;
+
+}
+.blog-content-single .meta-section {
+  float: right;
+  margin-right: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .transted-client img{
